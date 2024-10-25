@@ -1,16 +1,23 @@
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Numerics;
 
+/* zadanie 1 */
+
+Console.WriteLine("Zadanie 1");
 int n = 10;
 do
 {
     Console.Write(n);
     n--;
 }while (n >= 0);
+
 /* Koniec 1 */
 
 /* zadanie 2 */
+
+Console.WriteLine("Zadanie 2");
 string hasło;
 Console.Write("\nWpisz hasło: ");
 do
@@ -22,6 +29,8 @@ do
 /* koniec 2 */
 
 /* zadanie 3 */
+
+Console.WriteLine("Zadanie 3");
 int a = 1;
 Console.WriteLine("Liczby parzyste: ");
 while (a <= 100)
@@ -30,25 +39,30 @@ while (a <= 100)
         Console.WriteLine(a);
     a++;    
 }
+
 /* koniec 3 */
 
 /* zadanie 4 */
+
+Console.WriteLine("Zadanie 4");
 for (int i = 0; i < 16; i++)
     Console.WriteLine($"Square of {i} equals {i*i}");
+
 /* koniec 4 */
 
 /* zadanie 5,6 */
+
 List<int> numbers = new List<int>() { 4, 25, 35, 42, 55, 78, 99, 101 };
 
-Console.WriteLine("Liczby, które nie są podzielne przez 7:");
+Console.WriteLine("Liczby które nie są podzielne przez 7: ");
 
 foreach (int number in numbers)
 {
     if (number % 7 == 0)
-{
+    {
         continue;
     }
-    Console.WriteLine(number);
+    Console.WriteLine(number); 
 }
 
 /* koniec 5,6*/
@@ -112,32 +126,80 @@ void CreateAndPrintMatrix(int x, int y)
         {
             matrix[i, j] = '#';
         }
-        }
+    }
     for (int i = 0; i < x; i++)
     {
         for (int j = 0; i < y; j++)
         {
             Console.WriteLine(matrix[i, j]);
-    }
+        }
         Console.WriteLine();
-}
-
- /* koniec 11 */
-
-/* Zadanie 12 */
-string EvenOrOdd1(int toCheck)
-{
-    string retStr = "";
-    if (toCheck % 2 == 0
-    {
-        retStr = "Even";
     }
-    else
-    {
-        retStr = "Odd";
 
+    /* koniec 11 */
+
+    /* Zadanie 12 */
+    Console.WriteLine("Zadanie 12");
+    string EvenOrOdd1(int toCheck)
+    {
+        string retStr = "";
+        if (toCheck % 2 == 0)
+        {
+            retStr = "Even";
+        }
+        else
+        {
+            retStr = "Odd";
+
+        }
+        return retStr;
     }
-    return retStr;
-}
+
+    /* koniec 12 */
+
+    /* Zadanie 13 */
+    Console.WriteLine("Zadanie 13");
+    int n = WczytajZKlawiatury("n"); 
+    int m = WczytajZKlawiatury("m");
+
+    char[,] tablica = WypełnijTablice(n, m);
+    WyswietlTabliceNaEkran(tablica);
+
+    public static char[,] WypełnijTablice(int n, int m)
+    {
+        char[,] tablica = new char[n, m];
+
+        for (int i = 0; n > 0; i++)
+        {
+            for (int j = 0; j < m; j++)
+            {
+                if (i == 0 || i == n - 1 || j == 0 || j == m - 1)
+                {
+                    tablica[i, j] = '#';
+                }
+                else
+                {
+                    tablica[i, j] = ' ';
+                }
+            }
+        }
+        return tablica;
+    }
+    // Funkcja wyświetlająca tablicę na ekranie
+
+    public static void WsietlTablicaNaEkran(chat[,] tablica)
+    {
+        int n = tablica.GetLength(0);
+        int m = tablica.GetLength(1);
+
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < m; j++)
+            {
+                Console.WriteLine(tablica[i, j]);
+            }
+            Console.WriteLine();
+        }
+    }
 }
 
