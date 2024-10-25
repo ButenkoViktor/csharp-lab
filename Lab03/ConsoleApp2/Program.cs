@@ -1,4 +1,3 @@
-﻿/* zadanie 1 */
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Numerics;
@@ -40,44 +39,61 @@ for (int i = 0; i < 16; i++)
 
 /* zadanie 5,6 */
 List<int> numbers = new List<int>() { 4, 25, 35, 42, 55, 78, 99, 101 };
-foreach (int element in numbers)
+
+Console.WriteLine("Liczby, które nie są podzielne przez 7:");
+
+foreach (int number in numbers)
 {
-    if (element % 7 == 0)
-    Console.WriteLine("Elementy które są podzielne przez 7: " + element); 
-    break;
+    if (number % 7 == 0)
+{
+        continue;
+    }
+    Console.WriteLine(number);
 }
 
 /* koniec 5,6*/
 
 /* zadanie 7 */
+Console.WriteLine("Zadanie 7");
 double[] dArray = new double[20];
 for (int i = 0; i < 20; i++)
 {
     dArray[i] = Math.Sqrt(i);
     Console.WriteLine("i: " + dArray[i]);
 }
+
 /* koniec 7 */
 
 /* zadanie 8 */
- int [,] m = new int[3, 4];
-for (int column = 0; column < 3; column++)
+
+Console.WriteLine("Zadanie 8");
+int[,] matrix = new int[3, 4];
+
+int value = 1;
+for (int i = 0; i < 3; i++)
 {
-    for (int row = 0; row < 4; row++)
+    for (int j = 0; j < 4; j++)
     {
-        m[column, row] = column + row;
+        matrix[i, j] = value;
+        value++;
     }
 }
-int[,] t = new int [4, 3];;
-for (int column = 0; column < 3; column++)
+// Wyświetlenie macierzy po transpozycji
+Console.WriteLine("Macierz po transpozycji:");
+for (int i = 0; i < 4; i++)
 {
-    for (int row = 0, row < 4; row++)
+    for (int j = 0; j < 3; j++)
     {
-        t[row, column] = m[column, row];
+        Console.Write(matrix[j, i] + " ");
     }
+    Console.WriteLine();
 }
+
 /* koniec 8 */
 
 /* zadanie 10 */
+
+Console.WriteLine("Zadanie 10");
 void PrintUpperCase(string txt)
     {
         Console.WriteLine(txt.ToUpper());
@@ -85,18 +101,29 @@ void PrintUpperCase(string txt)
 /* koniec 10 */
 
 /* zadanie 11 */
-void CreateMatrix(int x, int y)
+
+Console.WriteLine("Zadanie 11");
+void CreateAndPrintMatrix(int x, int y)
 {
     char[,] matrix = new char[x, y];
-    for(int i =0; i < x; i++)
+    for (int i = 0; i < x; i++)
     {
-        for(int j = 0; j < y; j++)
+        for (int j = 0; i < y; j++)
         {
-            matrix[x, y] = '#';
-
+            matrix[i, j] = '#';
         }
+        }
+    for (int i = 0; i < x; i++)
+    {
+        for (int j = 0; i < y; j++)
+        {
+            Console.WriteLine(matrix[i, j]);
     }
+        Console.WriteLine();
 }
+
+ /* koniec 11 */
+
 /* Zadanie 12 */
 string EvenOrOdd1(int toCheck)
 {
@@ -112,8 +139,5 @@ string EvenOrOdd1(int toCheck)
     }
     return retStr;
 }
-string EvenOrOdd3(int toChek)
-{
-    return toCheck % 2 == 0 ? "Even" : "Odd";
 }
 
