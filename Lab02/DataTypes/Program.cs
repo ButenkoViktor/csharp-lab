@@ -1,6 +1,7 @@
 ﻿using System.Runtime.Intrinsics.X86;
 using System.Security;
-
+/* Zadanie 1 */
+Console.WriteLine("Zadanie 1\n");
 Console.WriteLine("Zmienne i typy danych");
 byte byteVariable = 50;
 int integralVariable = 300;
@@ -13,7 +14,9 @@ string stringVariable = "How you doing?";
 // tutaj wpisz rozwiązanie
 Console.WriteLine(byteVariable + "\n" + integralVariable + "\n" + longVariable + "\n" + charVariable2 + "\n" + doubleVariable + "\n" + floatVariable + "\n" + stringVariable + "\n");
 /* koniec zadania 1 */
+
 /* zadanie 2 */
+Console.WriteLine("Zadanie 2\n");
 int num = 2147483647;
 long bigNum = 88888888888;
 string stringNum = "1024";
@@ -28,7 +31,9 @@ int stringNumToInt = int.Parse(stringNum);
 Console.WriteLine("stringNum: " + stringNum + "\n" + "stringNumtoInt: " + stringNumToInt);
 // zbadaj zachowanie programu
 /* koniec zadania 2 */
+
 /* zadanie 3 */
+Console.WriteLine("Zadanie 3\n");
 int a = 18;
 int b = 6;
 decimal price = 10.56m;
@@ -68,6 +73,7 @@ Console.WriteLine(seconds);
 /* koniec zadania 3 */
 
 /* zadanie 4 */
+Console.WriteLine("Zadanie 4\n");
 int toIncrement = 3;
 int toDivide = 5;
 // wstaw do zmiennej toIncrement jej obecną wartość powiększoną o jeden (nie używając żadnej cyfry)
@@ -77,7 +83,9 @@ Console.WriteLine(toIncrement);
 toDivide /= toDivide;
 Console.WriteLine(toDivide);
 /* koniec zadania 4 */
+
 /* zadanie 5 */
+Console.WriteLine("Zadanie 5\n");
 double degree = 45;
 double sinValue;
 // do zmiennej sinValue przypisz wartość funkcji sinus dla zmiennej degree wyrażonej w stopniach
@@ -86,6 +94,7 @@ Console.WriteLine(sinValue);
 /* koniec zadania 5 */
 
 /* zadanie 6 */
+Console.WriteLine("Zadanie 6\n");
 int year = 2024;
 int month = 5;
 int day = 3;
@@ -101,6 +110,7 @@ Console.WriteLine(dt.DayOfWeek);
 /* koniec zadania 6 */
 
 /* zadanie 7 */
+Console.WriteLine("Zadanie 7\n");
 string firstPart = "This is ";
 string secondPart = "a string ";
 string thirdPart = "with capital letters.";
@@ -114,6 +124,7 @@ Console.WriteLine(fullText.Length);
 /* koniec zadania 7 */
 
 /* zadanie 8 */
+Console.WriteLine("Zadanie 8\n");
 double lengthA = 5;
 double lengthB = 1;
 double lengthC = 3;
@@ -122,8 +133,10 @@ bool tringle = (lengthA < lengthB + lengthC);
 bool isRightTringle = (lengthA * lengthA == lengthB * lengthB + lengthC * lengthC);
 Console.WriteLine(isRightTringle);
 // jeśli tak, to sprawdź czy jest to trójkąt prostokątny (kolejna zmienna bool)
+/* koniec zadania 8 */
 
 /* zadanie 9 */
+Console.WriteLine("Zadanie 9\n");
 string conditionalString = "To be or not to be?";
 // jeśli długość ciągu znaków jest większa niż 10 to wyświetl na ekran ten tekst
 if (conditionalString.Length > 10)
@@ -148,6 +161,7 @@ else
 /* koniec zadania 10 */
 
 /*zadanie 11 */
+Console.WriteLine("Zadanie 11\n");
 if (temperature > 20) Console.WriteLine("ciepło");
 else Console.WriteLine("Zimno");
 /* zadanie 12 */
@@ -192,7 +206,9 @@ else
 }
 Console.WriteLine($"Price: {sellPrice}");
 /* koniec zadania 12 */
+
 /* zadanie 13 */
+Console.WriteLine("Zadanie 13");
 char hexNum = 'E';
 switch (hexNum)
 {
