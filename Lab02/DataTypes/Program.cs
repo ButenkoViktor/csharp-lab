@@ -17,20 +17,16 @@ Console.WriteLine(byteVariable + "\n" + integralVariable + "\n" + longVariable +
 int num = 2147483647;
 long bigNum = 88888888888;
 string stringNum = "1024";
-
 // zadeklaruj zmienną typu long i przypisz do niej zmienną num
 long numlong = num;
 Console.WriteLine("num: " + num + "\n" + "numlong: " + numlong);
-
 // zadeklaruj zmienną typu int i przypisz do niej zmienną bigNum
 int bignumlong = (int)bigNum;
 Console.WriteLine("bigNum" + bigNum + "\n" + "bignumlong: " + bignumlong);
-
 // zadeklaruj zmienną typu int i przypisz do niej zmienną stringNum (zastosuj Parse)
 int stringNumToInt = int.Parse(stringNum);
 Console.WriteLine("stringNum: " + stringNum + "\n" + "stringNumtoInt: " + stringNumToInt);
 // zbadaj zachowanie programu
-
 /* koniec zadania 2 */
 /* zadanie 3 */
 int a = 18;
@@ -125,10 +121,8 @@ double lengthC = 3;
 bool tringle = (lengthA < lengthB + lengthC);
 bool isRightTringle = (lengthA * lengthA == lengthB * lengthB + lengthC * lengthC);
 Console.WriteLine(isRightTringle);
-
 // jeśli tak, to sprawdź czy jest to trójkąt prostokątny (kolejna zmienna bool)
 
-/* koniec zadania 8 */
 /* zadanie 9 */
 string conditionalString = "To be or not to be?";
 // jeśli długość ciągu znaków jest większa niż 10 to wyświetl na ekran ten tekst
@@ -137,7 +131,9 @@ if (conditionalString.Length > 10)
     Console.WriteLine(conditionalString);
 }
 /* koniec zadania 9 */
+
 /* zadanie 10 */
+Console.WriteLine("Zadanie 10\n");
 int temperature = 22;
 // jeśli temperatura jest większa niż 20`C wyświetl "ciepło", w przeciwnym wypadku "zimno"
 if (temperature > 20)
@@ -198,7 +194,6 @@ Console.WriteLine($"Price: {sellPrice}");
 /* koniec zadania 12 */
 /* zadanie 13 */
 char hexNum = 'E';
-
 switch (hexNum)
 {
     case '0':
@@ -229,12 +224,8 @@ switch (hexNum)
         Console.WriteLine($"Decimal number: 9");
         break;
     case '9':
-
-    // ...
-
     default:
         Console.WriteLine($"Not a valid hexadecimal number!");
         break;
 }
-
 /* koniec zadania 13 */
