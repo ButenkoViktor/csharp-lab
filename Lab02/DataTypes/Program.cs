@@ -164,6 +164,7 @@ else
 Console.WriteLine("Zadanie 11\n");
 if (temperature > 20) Console.WriteLine("ciepło");
 else Console.WriteLine("Zimno");
+
 /* zadanie 12 */
 int code = 4;
 int quantity = 11;
