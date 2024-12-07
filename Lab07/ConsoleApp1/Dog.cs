@@ -13,7 +13,6 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Running like a dog...");
         }
-
         public void FetchBall()
         {
             Console.WriteLine("Just throw the ball and I'll fetch it!");
