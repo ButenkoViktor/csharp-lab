@@ -24,7 +24,7 @@ namespace ConsoleApp1
         }
         public void FetchBall()
         {
-            Console.WriteLine("Just throw the ball and i'll fetch it!");
+            Console.WriteLine("Just throw the ball and i will fetch it!");
         }
         public override string ToString()
         {
