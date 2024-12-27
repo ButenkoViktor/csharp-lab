@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,16 +7,28 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class Dog : Animal, Mammal, IWalkable
+    public class Dog : Mammal, IWalkable
     {
-        public string Sound => "Woof";
-        public void Move()
+        public override string Sound => "Woof";
+        public override void Move()
         {
             Console.WriteLine("Running like a dog...");
         }
+        public void Walk()
+        {
+            Console.WriteLine("I walk on the leash");
+        }
+        public override void ProductMilk()
+        {
+            Console.WriteLine("Dog is producing milk");
+        }
         public void FetchBall()
         {
-            Console.WriteLine("Just throw the ball and I'll fetch it!");
+            Console.WriteLine("Just throw the ball and i'll fetch it!");
+        }
+        public override string ToString()
+        {
+            return "I'm a Dog, I do Woof";
         }
     }
 }

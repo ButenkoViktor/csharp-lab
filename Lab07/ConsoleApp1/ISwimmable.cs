@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
-{
-    internal class ISwimmable
+{ 
+    public interface ISwimmable
     {
+        public void Swim();
     }
 }
