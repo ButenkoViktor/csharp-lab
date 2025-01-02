@@ -7,7 +7,7 @@ public class Program
     static List<Book> books = new List<Book>();
     static void Main(string[] args)
     {
-
+        Console.WriteLine("Zadanie 1");
         var letter = new Letter("Secret content of the letter.");
         var email = new Email("Email content here.");
         var sms = new SMS("This is an SMS.");
